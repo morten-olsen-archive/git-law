@@ -1,0 +1,26 @@
+{
+  "name": "git-law",
+  "packageManager": "yarn@3.1.0",
+  "main": "./dist/index.js",
+  "bin": {
+    "gitlaw": "./bin/gitlaw.js"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "build:dev": "tsc --build --watch",
+    "demo": "node ./bin/gitlaw.js run demo-config --config demo-config.ts"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "dotenv": "^10.0.0",
+    "octokit": "^1.7.1",
+    "wildcard-match": "^5.1.2",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/yaml": "^1.9.7",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
