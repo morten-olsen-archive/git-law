@@ -17,6 +17,7 @@ const repoBox = (repo: RepoRunReport) => `
 | Rule | Status | Type | Reasons |
 | ---- | ------ | ---- | ------- |
 ${Object.entries(repo.rules).map(([name, result]) => ruleResult(name, result)).join('\n')}
+
 </defaults>
 `;
 
