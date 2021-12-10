@@ -1,11 +1,13 @@
 {
   "name": "git-law",
+  "version": "0.1.0",
   "packageManager": "yarn@3.1.0",
   "main": "./dist/index.js",
   "bin": {
     "gitlaw": "./bin/gitlaw.js"
   },
   "scripts": {
+    "test": "echo not configured",
     "build": "tsc --build",
     "build:dev": "tsc --build --watch",
     "demo": "node ./bin/gitlaw.js run demo-config --config demo-config.ts"

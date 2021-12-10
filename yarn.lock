@@ -28,24 +28,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@morten-olsen/git-law@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@morten-olsen/git-law@workspace:."
-  dependencies:
-    "@types/yaml": ^1.9.7
-    commander: ^8.3.0
-    dotenv: ^10.0.0
-    nodemon: ^2.0.15
-    octokit: ^1.7.1
-    ts-node: ^10.4.0
-    typescript: ^4.5.2
-    wildcard-match: ^5.1.2
-    yaml: ^1.10.2
-  bin:
-    gitlaw: ./bin/gitlaw.js
-  languageName: unknown
-  linkType: soft
-
 "@npmcli/fs@npm:^1.0.0":
   version: 1.0.0
   resolution: "@npmcli/fs@npm:1.0.0"
@@ -1072,6 +1054,24 @@ __metadata:
   checksum: 8bc1a23174a06b2b4ce600df38d6c98d2ef6d84e020c1ddad632ad75bac4e092eeb40e4c09e0761c35fc2dbc5e7fff5dab5e763a383582c4a167dd69a905bd12
   languageName: node
   linkType: hard
+
+"git-law@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "git-law@workspace:."
+  dependencies:
+    "@types/yaml": ^1.9.7
+    commander: ^8.3.0
+    dotenv: ^10.0.0
+    nodemon: ^2.0.15
+    octokit: ^1.7.1
+    ts-node: ^10.4.0
+    typescript: ^4.5.2
+    wildcard-match: ^5.1.2
+    yaml: ^1.10.2
+  bin:
+    gitlaw: ./bin/gitlaw.js
+  languageName: unknown
+  linkType: soft
 
 "glob-parent@npm:~5.1.2":
   version: 5.1.2
