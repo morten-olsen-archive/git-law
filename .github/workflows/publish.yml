@@ -20,7 +20,7 @@ jobs:
         node-version: 16
         registry-url: https://registry.npmjs.org/
     - run: corepack enable
-    - run: yarn install --ignore-scripts --frozen-lockfile
+    - run: yarn install
     - run: git config --global user.name "GitHub CD bot"
     - run: git config --global user.email "github-cd-bot@example.com"
     - run: yarn version --new-version="${{ github.event.release.tag_name }}"
