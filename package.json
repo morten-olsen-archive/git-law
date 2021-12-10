@@ -7,6 +7,7 @@
     "gitlaw": "./bin/gitlaw.js"
   },
   "scripts": {
+    "prepublish":" yarn run build",
     "test": "echo not configured",
     "build": "tsc --build",
     "build:dev": "tsc --build --watch",
