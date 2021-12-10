@@ -14,7 +14,7 @@ interface RuleRunReport {
   type: PolicyType;
   preEnforcement: RuleValidationReport;
   enforcement?: RuleEnforcementReport;
-  postEnforcement?: RuleValidationReport;
+  postEnforcement: RuleValidationReport;
 }
 
 interface RepoRunReport {
@@ -33,6 +33,7 @@ interface RunReport {
 export type {
   RuleValidationReport,
   RuleEnforcementReport,
+  RuleRunReport,
   RepoRunReport,
   RunReport,
 };

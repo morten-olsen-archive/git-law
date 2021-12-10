@@ -6,6 +6,8 @@ import {
   Config,
   PolicyType,
   consoleReporter,
+  file,
+  markdown,
 } from './dist';
 
 const token = process.env.GITHUB_TOKEN;
@@ -40,6 +42,8 @@ const config: Config = {
   },
   reporters: [
     consoleReporter,
+    file({ outputPath: 'report.json' }),
+    markdown({ outputPath: 'test.md' }),
   ],
 };
 

@@ -4,3 +4,5 @@
 /.yarn
 /.pnpm.*
 /dist
+/test.md
+/report.json
