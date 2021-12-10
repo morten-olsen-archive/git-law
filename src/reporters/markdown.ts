@@ -18,7 +18,7 @@ const repoBox = (repo: RepoRunReport) => `
 | ---- | ------ | ---- | ------- |
 ${Object.entries(repo.rules).map(([name, result]) => ruleResult(name, result)).join('\n')}
 
-</defaults>
+</details>
 `;
 
 const markdown = (report: RunReport) => `
