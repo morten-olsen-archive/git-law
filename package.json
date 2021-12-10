@@ -1,6 +1,6 @@
 {
   "name": "git-law",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "packageManager": "yarn@3.1.0",
   "main": "./dist/index.js",
   "bin": {
