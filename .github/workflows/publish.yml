@@ -23,6 +23,7 @@ jobs:
     - run: yarn install
     - run: git config --global user.name "GitHub CD bot"
     - run: git config --global user.email "github-cd-bot@example.com"
+    - run: yarn run build
     # Not supported by yarn 3
     - run: npm version "${{ github.event.release.tag_name }}"
     - run: npm publish
